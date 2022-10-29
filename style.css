@@ -19,7 +19,7 @@ body {
   border-bottom: 1px solid #e6e6f2;
   background-color: #3159e4;
   position: relative;
-  width: 98.5vw ;
+  width: 98.5vw;
 
   /* height: 100px; */
 }
@@ -393,7 +393,7 @@ ul.overview {
   display: grid;
   height: 35vh;
   width: 82.9vw !important;
-
+  /* margin-top: 10pt; */
   grid-gap: 12px;
 }
 
@@ -479,25 +479,22 @@ table.tool {
 .tool2 {
   position: absolute;
   left: 31.8vw;
-  top: 12vh;
+  top: 11vh;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 16px solid white;
+  border-top: 30px solid white;
 }
 
-.tool2,
-.tool3,
-.chartTooltip {
-  animation: downUp 1s ease-out;
+.tool2,.tool3,.chartTooltip{
+  animation: downUp  2s ease-out;
 }
 
-@keyframes downUp {
+@keyframes downUp{
   0% {
-    transform: translateY(-50%);
+    opacity:0;
   }
-
-  100% {
-    transform: translateY(0);
+  100%{
+    opacity:1;
   }
 }
 
@@ -539,7 +536,7 @@ select {
   border-radius: 50%;
   text-align: center;
   top: 16vh;
-  left: 10vw;
+  left: 9.4vw;
   padding-top: 30px;
   background-color: #fff;
 }
@@ -741,109 +738,49 @@ table td {
   top: 110px;
 } */
 
-
-/* @media only screen and (min-width: 1366px) {
+@media only screen and (max-width: 1400px) {
   .content2 {
-    margin-top: -75px !important;
+    margin-top: -30px;
   }
 
   .sidebar {
-    height: 70vh !important;
+    min-height: 125vh;
+  }
+
+  body {
+    max-height: 125vh !important;
   }
 
   .inDonut {
-    
+    position: absolute;
     width: 85px;
     height: 85px;
-    top: 21.8vh;
-    left: 10.7vw;
-    
+    border-radius: 50%;
+    text-align: center;
+    top: 138px;
+    left: 150px;
+    background-color: #fff;
   }
-
 
   #chartDiv {
     padding: 0px;
     margin: auto;
     margin-top: -45px;
-    z-index: 0;
+      z-index: 0;
     width: 365px;
   }
-  .tool3 {
-   left: 32.1vw;
-    top: 13.1vh !important;
-  }
-
-  .chartTooltip {
-    top: -5vh !important;
-    left: 24.5vw;
-  }
-
-  .tool2 {  
-    left: 31.68vw;
-    top: 10.5vh;
-  }
 
   table {
-    margin: 40px 20px -25px 20px;
+    margin: 40px 20px -20px 20px;
   }
-} */
-
+  
+}
 
 @media only screen and (max-width: 1920px) {
-
-
-  .tool3 {
-   
-    left: 32.1vw;
-    top: 12.8vh;
-    width: 10px;
-    height: 10px;
-  
-  }
-
-  .chartTooltip {
-   top: -6vh;
-    left: 24.5vw;
-  }
-
-  .tool2 {
-    
-    left: 31.68vw;
-    top: 10.5vh;
-   }
-
-  .inDonut {
-  
-    width: 78px;
-    height: 78px;
-    top: 20.59vh;
-    left: 10vw;
-  }
-
-  .inDonut h6 {
-    margin-top: -18px;
-  }
-.inDonut p{
-  margin-top: -7px;
-}
-  #chartDiv {
-
-    margin: auto;
-    margin-top: -45px;
-    z-index: 0;
-    width: 27vw;
-  }
-
   .content2 {
-    margin-top: -25px !important;
-    width: 82.7vw  !important;
+    margin-top: 18px;
   }
-  .sidebar {
-    height: 130vh !important;
+  .sidebar{
+    height: 125vh;
   }
-  table {
-    margin: 40px 0 -25px 15px;
-  }
- 
-
 }
