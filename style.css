@@ -1,22 +1,25 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   background-color: #f7f8fc;
   font-family: "Poppins", sans-serif;
+  width: 98vw !important;
 }
+
 .head {
   border-right: 1px solid #e6e6f2;
   height: 60px;
   padding-top: 5px;
 }
+
 .dashboard-header .navbar {
   padding: 0;
   border-bottom: 1px solid #e6e6f2;
   background-color: #3159e4;
   position: relative;
-  width: 100vw;
+  width: 98.5vw ;
 
   /* height: 100px; */
 }
@@ -35,19 +38,23 @@ body {
   font-size: 17.86 pt;
   color: white;
 }
+
 .navbar-brand:hover {
   color: white;
 }
+
 /* ////////////////////-----Mail Icon-----///////////////////  */
 
 .search {
   position: relative;
 }
+
 .searchIcon {
   position: absolute;
   left: 8px;
   top: 18px;
 }
+
 .searchBox {
   border-radius: 15px;
   background-color: transparent;
@@ -62,13 +69,16 @@ body {
   font-size: 8.33pt;
   font-weight: 400;
 }
+
 .displayInline {
   display: inline;
 }
+
 .headR {
   float: right;
   padding: 0 0;
 }
+
 .floatR {
   float: right;
 }
@@ -97,6 +107,7 @@ body {
   background-color: red;
   color: white;
 }
+
 .Nbadge {
   background-color: green;
 }
@@ -108,6 +119,7 @@ a.notification {
 .headR li.dropdown {
   border-right: none;
 }
+
 .headR {
   position: absolute;
   right: 30px;
@@ -155,6 +167,7 @@ a.notification {
   font-size: 8.93pt;
   font-weight: 500;
   display: inline-block;
+  /* margin-top: 50px !important; */
 }
 
 /*---- User icon sizes ---*/
@@ -168,20 +181,36 @@ a.notification {
   display: inline-block;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 8.93pt;
+  font-weight: 500;
+
+}
+
+
+
 /* @@@@@@@@@@@@@@@@@@@@@@@ sideNavbar @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 /* Sidebar */
 
 .parent {
-  width: 100vw;
+  width: 97vw !important;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  /* grid-template-rows: 1fr 1fr; */
+  grid-template-rows: 4fr 3fr;
+  margin-right: 0px;
+  grid-gap: 12px;
 }
+
 .child {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
 #sidebarMenu {
   width: 15vw;
   height: 100vh;
@@ -200,6 +229,7 @@ a.notification {
   font-weight: 600;
   margin: -10px 0 -5px -8px;
 }
+
 .sidebar .active {
   font-family: "Poppins", sans-serif;
   font-size: 8.33pt;
@@ -208,6 +238,7 @@ a.notification {
   background-color: transparent;
   border: none;
 }
+
 .sMenu-item {
   color: #b5b7c3;
   border: none;
@@ -215,28 +246,33 @@ a.notification {
   font-weight: 400;
   line-height: 32px;
 }
+
 .sMenu-item:hover {
   background-color: white;
 }
+
 .sMenuIcon {
   padding: 3px;
   margin: 0 12px 0 2px;
 }
+
 .active .sMenuIcon {
   background-color: #f0523c;
   padding: 3px;
   border-radius: 5px;
 }
+
 .divContainer {
   display: inline-block;
 }
 
 .content {
+  margin: 20 0 0 0 !important;
   display: grid;
-  height: 400px;
+  width: 82vw !important;
+  height: 55vh;
   grid-template-columns: 5fr 2fr;
-  grid-template-rows: 1fr 3fr 4fr 3fr;
-  margin-top: 10pt;
+  grid-template-rows: .5fr 3fr 4fr 3fr;
   grid-gap: 12px;
 }
 
@@ -245,12 +281,17 @@ a.notification {
   border: none;
 }
 
-.r1c2,
+.r1c1 {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* .r1c2,
 .r2c2,
 .r3c2,
 .r4c2 {
-  margin-right: 14px;
-}
+  margin-right: 14px; 
+} */
 .contentHead {
   color: #3e4968;
   border: none;
@@ -258,7 +299,7 @@ a.notification {
   font-size: 10.71pt;
   font-weight: 600;
   display: inline-block;
-  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 button {
@@ -271,6 +312,7 @@ button {
   width: 76pt;
   height: 26pt;
   float: right;
+
 }
 
 .r3c1 {
@@ -279,17 +321,26 @@ button {
 }
 
 ul.overview {
-  margin-top: 20px;
+  margin-left: -10px;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .over-item {
+  height: 10vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 2fr 3fr;
-  margin-bottom: -32px;
-  margin-left: -13px;
+  grid-template-rows: 1fr 3fr;
+  margin-bottom: -50px;
+  margin-left: -20px;
+  padding-left: 15px;
+  margin-top: 20px;
+  border-left: 1px solid #ededed;
+}
+
+.o-item1 {
+  border: none;
 }
 
 .over-item p {
@@ -297,6 +348,7 @@ ul.overview {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 8.72pt;
 }
+
 .over-item h3 {
   margin-top: -10px;
   grid-column-start: 2;
@@ -304,6 +356,7 @@ ul.overview {
   font-size: 18.62pt;
   font-weight: 600;
 }
+
 .over-item .small {
   margin-top: 20px;
   margin-left: -10px;
@@ -318,6 +371,7 @@ ul.overview {
 .sm-green {
   color: #2ec2b7;
 }
+
 .sm-red {
   color: #eb6c87;
 }
@@ -328,6 +382,7 @@ ul.overview {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
 .content2 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -336,8 +391,9 @@ ul.overview {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
-  height: 350px;
-  margin-top: 10pt;
+  height: 35vh;
+  width: 82.9vw !important;
+
   grid-gap: 12px;
 }
 
@@ -350,29 +406,126 @@ ul.overview {
 .c3 {
   margin-right: 14px;
 }
+
 #chartDiv {
   margin: auto;
   margin-top: -45px;
   z-index: 0;
-  width: 360px;
+  width: 24vw;
 }
+
 #bigChart {
   margin: auto;
   z-index: 0;
-  width: 700px;
-  height: 195px !important;
+  width: 50vw;
+  height: 29vh !important;
+
 }
+
+.bigChart {
+  position: relative;
+}
+
+.chartTooltip p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 10.06pt;
+  color: #a6a9b7
+}
+
+
+.chartTooltip {
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 5px 5px 30px 3px rgba(0, 0, 0, 0.078);
+  top: -2vh;
+  left: 25.4vw;
+}
+
+table.tool {
+  margin: 5px -5px 0 10;
+}
+
+.title h6 {
+  margin-top: -15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+.col1 {
+  margin-left: -10px !important;
+}
+
+.title p {
+  margin-right: 15px;
+
+}
+
+.value1 {
+  color: #f16857;
+}
+
+.value2 {
+  color: #a963ff;
+}
+
+.value3 {
+  color: #2ac7b0;
+}
+
+.value4 {
+  color: #3dbcfe;
+}
+
+.tool2 {
+  position: absolute;
+  left: 31.8vw;
+  top: 12vh;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 16px solid white;
+}
+
+.tool2,
+.tool3,
+.chartTooltip {
+  animation: downUp 1s ease-out;
+}
+
+@keyframes downUp {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tool3 {
+  position: absolute;
+  z-index: 1;
+  left: 32.1vw;
+  top: 14vh;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 3px #3159e4;
+}
+
 .chartSort {
   position: absolute;
   top: 10px;
   right: 20px;
 }
+
 .chartSort label,
 select {
   color: #d0d1d9;
   font-family: "Poppins", sans-serif;
   font-size: 8.71pt;
 }
+
 .chartSort select {
   text-align: center;
   border-radius: 5px;
@@ -381,27 +534,34 @@ select {
 
 .inDonut {
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 9vw;
+  height: 9vw;
   border-radius: 50%;
   text-align: center;
-  top: 155px;
-  left: 152px;
+  top: 16vh;
+  left: 10vw;
+  padding-top: 30px;
+  background-color: #fff;
 }
+
 .inDonut h6 {
+
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20pt;
 }
+
 .inDonut p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 9.2pt;
   line-height: 7.5pt;
-  margin-top: -7;
+  /* margin-top: -7; */
   color: #a6a9b7;
 }
+
 .card {
   z-index: 0;
 }
+
 .card-h {
   color: #2c2e3e;
   font-family: "Poppins", sans-serif;
@@ -410,6 +570,7 @@ select {
   margin: 20px;
   z-index: 1;
 }
+
 .card-s {
   color: #2c2e3e;
   font-family: "Poppins", sans-serif;
@@ -433,6 +594,7 @@ select {
   font-size: 7.52pt;
   font-weight: 600;
 }
+
 .smallRight2 {
   top: 35px;
 }
@@ -445,24 +607,28 @@ a.view {
   right: 20px;
   top: 15px;
 }
+
 #myChart1 {
   width: 240px !important;
   max-height: 80px !important;
   margin: -20 auto 10 auto;
   z-index: -1 !important;
 }
+
 #myChart2 {
   width: 280px !important;
   max-height: 80px !important;
   margin: -30px auto -8px auto;
   z-index: -1 !important;
 }
+
 #myChart3 {
   width: 280px !important;
   max-height: 80px !important;
   margin: -30px auto -7px auto;
   z-index: 1 !important;
 }
+
 .point {
   margin: 0 20px 0;
   width: 35px;
@@ -470,46 +636,61 @@ a.view {
   background-color: #3d1ef7;
   border-radius: 50%;
 }
+
+/* .c1{
+  height: 60vh;
+} */
 .activity-grid {
   margin-bottom: -55px;
   display: grid;
   grid-template-columns: 1fr 15fr;
   grid-template-rows: 1fr 1fr;
 }
+
+.last {
+  height: 9vh;
+}
+
 .activity {
   margin-left: -7px;
+  max-height: fit-content;
+  margin-bottom: 0;
+
 }
+
 .activity h6 {
   color: #2c2e3e;
   font-size: 9.52pt;
   font-family: "Poppins", sans-serif;
 }
+
 .activity p {
   color: #c9cbd3;
   font-size: 9.52pt;
   font-family: "Poppins", sans-serif;
 }
-.map {
-  margin: 0 25px;
-}
+
 .c {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 9.52pt;
 }
 
 table {
-  margin: 40px 20px -20px 20px;
+  margin: 10px 20px 0 35px;
 }
 
 table td {
   margin: 0 10px;
 }
+
 .u {
   font-family: "Poppins", sans-serif;
   font-size: 9.4pt;
   font-weight: 500;
 }
 
+
+/* 
 .australia {
   color: #fb1855;
 }
@@ -558,4 +739,111 @@ table td {
 .pNew {
   left: 96px;
   top: 110px;
+} */
+
+
+/* @media only screen and (min-width: 1366px) {
+  .content2 {
+    margin-top: -75px !important;
+  }
+
+  .sidebar {
+    height: 70vh !important;
+  }
+
+  .inDonut {
+    
+    width: 85px;
+    height: 85px;
+    top: 21.8vh;
+    left: 10.7vw;
+    
+  }
+
+
+  #chartDiv {
+    padding: 0px;
+    margin: auto;
+    margin-top: -45px;
+    z-index: 0;
+    width: 365px;
+  }
+  .tool3 {
+   left: 32.1vw;
+    top: 13.1vh !important;
+  }
+
+  .chartTooltip {
+    top: -5vh !important;
+    left: 24.5vw;
+  }
+
+  .tool2 {  
+    left: 31.68vw;
+    top: 10.5vh;
+  }
+
+  table {
+    margin: 40px 20px -25px 20px;
+  }
+} */
+
+
+@media only screen and (max-width: 1920px) {
+
+
+  .tool3 {
+   
+    left: 32.1vw;
+    top: 12.8vh;
+    width: 10px;
+    height: 10px;
+  
+  }
+
+  .chartTooltip {
+   top: -6vh;
+    left: 24.5vw;
+  }
+
+  .tool2 {
+    
+    left: 31.68vw;
+    top: 10.5vh;
+   }
+
+  .inDonut {
+  
+    width: 78px;
+    height: 78px;
+    top: 20.59vh;
+    left: 10vw;
+  }
+
+  .inDonut h6 {
+    margin-top: -18px;
+  }
+.inDonut p{
+  margin-top: -7px;
+}
+  #chartDiv {
+
+    margin: auto;
+    margin-top: -45px;
+    z-index: 0;
+    width: 27vw;
+  }
+
+  .content2 {
+    margin-top: -25px !important;
+    width: 82.7vw  !important;
+  }
+  .sidebar {
+    height: 130vh !important;
+  }
+  table {
+    margin: 40px 0 -25px 15px;
+  }
+ 
+
 }

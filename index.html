@@ -74,15 +74,13 @@
             <div class="head nav-user">
 
               <li class="nav-item dropdown nav-user ">
-                <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <img alt="" class="avatar">
+                <a class="nav-link nav-user-img" href="#">
+                  <img src="image/avatar.png" alt="" class="avatar">
                   <h6 class="nav-user-name">Hermann P. Schnitzel</h6>
-                  <img ckass="dropdown-menu" src="image/arrow.png" alt="">
+                  <img class="drop-icon" src="image/arrow.png" alt="">
                 </a>
 
-                <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
-                  aria-labelledby="navbarDropdownMenuLink2">
+                <div class="dropdown-menu dropdown-menu-right nav-user-dropdown">
                   <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
                   <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                   <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
@@ -136,14 +134,14 @@
     <!--@@@@@@@@@@@@@@@@@@@@@@@@ ContentArea @@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
     <div class="content">
-      <div class=" r1c1">
+      <div class="r1c1">
         <h4 class="contentHead">Overview</h4>
         <button>Find New Flat</button>
       </div>
       <div class="r1c2"></div>
       <div class="card r2c1">
         <ul class="overview">
-          <li class="over-item">
+          <li class="over-item o-item1">
             <img src="image/Icon-1.png" alt="" class="over-icon">
             <p>MARKET SIZE</p>
             <h3>$124,500</h3>
@@ -183,8 +181,38 @@
             <option value="month">Monthly</option>
           </select>
         </form>
-        <div>
+        <div class="bigChart">
           <canvas id="bigChart"></canvas>
+          <div class="chartTooltip">
+            <table class="tool">
+              <tr>
+                <td class="title col1">
+                  <p>Revenue</p>
+                  <h6 class="value1">$1524.00</h6>
+                </td>
+                <td class="title col2">
+                  <p>Market Average</p>
+                  <h6 class="value2">$1,124.00</h6>
+                </td>
+              <tr>
+              <tr>
+                <td class="title col1">
+                  <p>Task Completed</p>
+                  <h6 class="value3">28</h6>
+                </td>
+                <td class="title col2">
+                  <p>Task Created</p>
+                  <h6 class="value4">22</h6>
+                </td>
+              <tr>
+                <td class="title"></td>
+                <td class="title"></td>
+              </tr>
+            </table>
+
+          </div>
+          <div class="tool2"></div>
+          <div class="tool3"></div>
         </div>
       </div>
       <div class="card r3c2">
@@ -246,7 +274,7 @@
             <p>21 Min ago, Bellevedere, New York</p>
           </div>
         </div>
-        <div class="activity-grid">
+        <div class="activity-grid last">
           <div class="point">
           </div>
           <div class="activity">
@@ -266,7 +294,7 @@
       <div class="card c3">
         <h6 class="card-h">Global Sales Top Location</h6>
         <!-- <img class="map" src="image/png-world-map-world-map-png-2638.png" alt="" srcset=""> -->
-        <div style="max-width: 700px">
+        <div >
           <!-- Keep map above fold -->
           <div id="map"></div>
         </div>
