@@ -5,22 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
 
-  
+  <link href="https://playground.anychart.com/docs/samples/BCT_Area_Chart_01/iframe" rel="canonical">
+
   <!-- ---------------fonts--------------------------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600&display=swap"
+    rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/chunkfive-print" rel="stylesheet">
   <!-- ---------------fonts--------------------------- -->
-  
-  
+
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,67 +30,61 @@
     <nav class="navbar navbar-expand-lg fixed-top ">
       <div class="head">
         <a href="#">
-          <img class="menu-icon " src="image/Menu icon.png" alt="" srcset="">
+          <div id="mIcon">
+            <img class="menu-icon" src="image/Menu icon.png" alt="" srcset="">
         </a>
       </div>
-      <a class="navbar-brand" href="#">Queenley</a>
+  </div>
+  <a class="navbar-brand" href="#">Queenley</a>
 
-      <div>
-        <div class="headR floatR">
+  <div>
+    <div class="headR floatR">
 
-          <ul class="navbar-nav  floatR ">
-            <div class="head">
-              <li class="nav-item">
-                <div id="custom-search " class="top-search-bar search">
-                  <input class="searchBox" type="text" placeholder="Search..">
-                  <img src="image/Search.png" alt="" class="searchIcon">
-                </div>
-            <script src="/chart.js"></script>
-            <script src="/bigChart.js"></script>
-            <script src="/chart2.js"></script>
-            <script src="/chart3.js"></script>
-            <script src="/mapdata.js"></script>
-            <script src="/worldmap.js"></script>
-              </li>
+      <ul class="navbar-nav  floatR ">
+        <div class="head ">
+          <li class="nav-item ">
 
-            </div>
-            <div class="head">
-              <li class="nav-item notification">
-                <a href="#" class="msg">
-                  <img src="image/mail.png" alt="" class="msgImg">
-                  <span class="badge">3</span>
-                </a>
-              </li>
+            <input class="searchBox " type="text" placeholder="Search">
+            <img src="image/Search.png" alt="" class="searchIcon">
+          </li>
 
-            </div>
-            <div class="head">
-              <li class="nav-item notification">
-                <a href="#" class="notification">
-                  <img src="image/notofication.png" alt="" class="notificationImg">
-                  <span class="badge Nbadge">5</span>
-                </a>
-              </li>
-
-            </div>
-            <div class="head nav-user">
-
-              <li class="nav-item dropdown nav-user ">
-                <a class="nav-link nav-user-img" href="#">
-                  <img src="image/avatar.png" alt="" class="avatar">
-                  <h6 class="nav-user-name">Hermann P. Schnitzel</h6>
-                  <img class="drop-icon" src="image/arrow.png" alt="">
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-right nav-user-dropdown">
-                  <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
-                </div>
-            </div>
-            </li>
-          </ul>
         </div>
-      </div>
+        <div class="headNot bLeft ">
+          <li class="nav-item  notification">
+            <a href="#" class="msg">
+              <img src="image/mail.png" alt="" class="msgImg">
+              <span class="badge">1</span>
+            </a>
+          </li>
+        </div>
+        <div class="headNot bLeft ">
+          <li class="nav-item  notification">
+            <a href="#" class="notification">
+              <img src="image/notofication.png" alt="" class="notificationImg">
+              <span class="badge Nbadge">1</span>
+            </a>
+          </li>
+
+        </div>
+        <div class="head bLeft nav-user">
+
+          <li class="nav-item dropdown nav-user ">
+            <a class="nav-link nav-user-img" href="#">
+              <img src="image/avatar.png" alt="" class="avatar">
+              <h6 class="nav-user-name">Hermann P. Schnitzel</h6>
+              <img class="drop-icon" src="image/arrow.png" alt="">
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown">
+              <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+            </div>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
   </div>
   </nav>
   </div>
@@ -99,39 +94,32 @@
 
   <div class="parent">
 
-    <nav id="sidebarMenu" class="child collapse d-lg-block sidebar collapse bg-white">
-      <div>
-        <div class="list-group list-group-flush mx-3 mt-4">
-          <a href="#" class="list-group-item  sMenu-head list-group-item-action py-2 ripple" aria-current="true">
-            <h4>DASHBOARD</h4>
-          </a>
-          <a href="#" class="list-group-item sMenu-item  list-group-item-action py-2 ripple active">
-            <img src="image/dashboard.png" class="sMenuIcon" alt="" srcset=""><span>Dashboard</span>
-          </a>
-          <a href="#" class="list-group-item  sMenu-item list-group-item-action py-2 ripple">
-            <img src="image/Projects.png" class="sMenuIcon" alt="" srcset=""><span>Project</span>
-          </a>
-          <a href="#" class="list-group-item  sMenu-item list-group-item-action py-2 ripple">
-            <img src="image/marketing.png" class="sMenuIcon" alt="" srcset=""><span>Marketing</span></a>
-          <a href="#" class="list-group-item  sMenu-item list-group-item-action py-2 ripple">
-            <img src="image/tsbles.png" class="sMenuIcon" alt="" srcset=""><span>Tables</span></a>
-          <a href="#" class="list-group-item  sMenu-item list-group-item-action py-2 ripple">
-            <img src="image/analytics.png" class="sMenuIcon" alt="" srcset=""><span>Analytics</span>
-          </a>
-          <a href="#" class="list-group-item  sMenu-item list-group-item-action py-2 ripple">
-            <img src="image/settings.png" class="sMenuIcon" alt="" srcset=""><span>Settings</span></a>
+    <nav id="sidebarMenu" class="child  sidebar  bg-white">
 
-        </div>
-      </div>
+
+
+      <h4>DASHBOARD</h4>
+
+      <a href="#" class="list-group-item sMenu-item  active">
+        <img src="image/dashboard.png" class="sMenuIcon sActive" alt="" srcset=""><span>Dashboard</span>
+      </a>
+      <a href="#" class="list-group-item  sMenu-item">
+        <img src="image/Projects.png" class="sMenuIcon" alt="" srcset=""><span>Project</span>
+      </a>
+      <a href="#" class="list-group-item  sMenu-item ">
+        <img src="image/marketing.png" class="sMenuIcon" alt="" srcset=""><span>Marketing</span></a>
+      <a href="#" class="list-group-item  sMenu-item ">
+        <img src="image/tsbles.png" class="sMenuIcon" alt="" srcset=""><span>Tables</span></a>
+      <a href="#" class="list-group-item  sMenu-item ">
+        <img src="image/analytics.png" class="sMenuIcon" alt="" srcset=""><span>Analytics</span>
+      </a>
+      <a href="#" class="list-group-item  sMenu-item ">
+        <img src="image/settings.png" class="sMenuIcon" alt="" srcset=""><span>Settings</span></a>
+
+
     </nav>
     <!-- Sidebar -->
 
-
-    <!--@@@@@@@@@@@@@@@@@@@@@@@@ SideNav @@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-
-
-
-    <!--@@@@@@@@@@@@@@@@@@@@@@@@ ContentArea @@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
     <div class="content">
       <div class="r1c1">
@@ -139,7 +127,7 @@
         <button>Find New Flat</button>
       </div>
       <div class="r1c2"></div>
-      <div class="card r2c1">
+      <div class="card  row2 c1 r2c1">
         <ul class="overview">
           <li class="over-item o-item1">
             <img src="image/Icon-1.png" alt="" class="over-icon">
@@ -161,9 +149,9 @@
           </li>
         </ul>
       </div>
-      <div class="card r2c2">
+      <div class="card row2  c2 r2c2">
 
-        <h6 class="card-s">Production This Year</h6>
+        <h6 class="card-s">PRODUCTION THIS YEAR</h6>
         <h5 class="s-h5">$25,32,240</h5>
         <div>
           <canvas id="myChart2"></canvas>
@@ -171,8 +159,8 @@
         <p class="smallRight sm-green">↑05.24%</p>
 
       </div>
-      <div class="card r3c1">
-        <h6 class="card-s">Performance of Propery vs Market Average</h6>
+      <div class="card row3 c1 r3c1">
+        <h6 class="card-b">Performance of Propery vs Market Average</h6>
         <form action="" class="chartSort">
           <label for="sort">Sort by:</label>
           <select name="sort" id="cSort">
@@ -182,7 +170,7 @@
           </select>
         </form>
         <div class="bigChart">
-          <canvas id="bigChart"></canvas>
+          <!-- <canvas id="bigChart"></canvas> -->
           <div class="chartTooltip">
             <table class="tool">
               <tr>
@@ -195,198 +183,224 @@
                   <h6 class="value2">$1,124.00</h6>
                 </td>
               <tr>
-              <tr>
-                <td class="title col1">
-                  <p>Task Completed</p>
-                  <h6 class="value3">28</h6>
-                </td>
-                <td class="title col2">
-                  <p>Task Created</p>
-                  <h6 class="value4">22</h6>
-                </td>
-              <tr>
-                <td class="title"></td>
-                <td class="title"></td>
-              </tr>
-            </table>
-
+                <tr>
+                  <td class="title col1">
+                    <p>Task Completed</p>
+                    <h6 class="value3">28</h6>
+                  </td>
+                  <td class="title col2">
+                    <p>Task Created</p>
+                    <h6 class="value4">22</h6>
+                  </td>
+                  <tr>
+                    <td class="title"></td>
+                    <td class="title"></td>
+                  </tr>
+                </table>
+                
+              </div>
+              <div class="tool2"></div>
+              <div class="tool3"></div>
+            </div>
+            <div id="chartContainer"></div>
           </div>
-          <div class="tool2"></div>
-          <div class="tool3"></div>
+          <div class="c2r3">
+            <div class="card  row3 c2 r3c2">
+          <div class="row31">
+            <h6 class="card-s">COMMISSION THIS YEAR</h6>
+            <h5 class="s-h5">$4,82,045</h5>
+            <div>
+             <canvas id="myChart1"></canvas> 
+          </div>
+            <p class="smallRight sm-green">↑12.58%</p>
+          </div>
+            <div class="card c2 r4c2">
+              <div class="row32">
+              <h6 class="card-s">MONTHLY VISITS</h6>
+              <h5 class="s-h5">74,84,840</h5>
+              <div>
+            <canvas id="myChart3"></canvas>
+          </div>
+          <p class="smallRight sm-green">↑38.27%</p>
+          <p class="smallRight2 sm-red">↑09.84%</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card r3c2">
-        <h6 class="card-s">Commission This Year</h6>
-        <h5 class="s-h5">$4,82,045</h5>
-        <div>
-          <canvas id="myChart1"></canvas>
-        </div>
-        <p class="smallRight sm-green">↑12.58%</p>
-      </div>
-      <div class="card r4c2">
-        <h6 class="card-s">Monthly Visit</h6>
-        <h5 class="s-h5">74,84,840</h5>
-        <div>
-          <canvas id="myChart3"></canvas>
-        </div>
-        <p class="smallRight sm-green">↑38.27%</p>
-        <p class="smallRight2 sm-red">↑09.84%</p>
       </div>
     </div>
-
-
-    <div class="content2">
-      <div class="card c1">
-        <h6 class="card-h">Activities</h6>
-        <a href="#" class="view">View All</a>
-        <div class="activity-grid">
-
-          <div class="point">
-          </div>
-          <div class="activity">
-            <h6>Caspian made an offer for $1,40,000</h6>
-            <p>12 Min ago, Bellevedere, New York</p>
-          </div>
-        </div>
-        <div class="activity-grid">
-
-          <div class="point">
-          </div>
-          <div class="activity">
-            <h6>Valentino Morose asking for the rented</h6>
-            <p>15 Min ago, Bellevedere, UAE</p>
-          </div>
-        </div>
-        <div class="activity-grid">
-
-          <div class="point">
-          </div>
-          <div class="activity">
-            <h6>Most Disclosure.PDF</h6>
-            <p>18 Min ago, Owosso, USA</p>
-          </div>
-        </div>
-        <div class="activity-grid">
-          <div class="point">
-          </div>
-          <div class="activity">
-            <h6>Piff Jenkins 02 New Party Availables</h6>
-            <p>21 Min ago, Bellevedere, New York</p>
-          </div>
-        </div>
-        <div class="activity-grid last">
-          <div class="point">
-          </div>
-          <div class="activity">
-            <h6>Valentino Morose asking for the rented</h6>
-            <p>15 Min ago, Bellevedere, UAE</p>
-          </div>
-        </div>
-      </div>
-      <div class="card c2">
-        <h6 class="card-h">Total Email Sender</h6>
-        <div id="chartDiv"></div>
-        <div class="inDonut">
-          <h6>28.8K</h6>
-          <p>Total Emails Senders</p>
-        </div>
-      </div>
-      <div class="card c3">
-        <h6 class="card-h">Global Sales Top Location</h6>
-        <!-- <img class="map" src="image/png-world-map-world-map-png-2638.png" alt="" srcset=""> -->
-        <div >
-          <!-- Keep map above fold -->
-          <div id="map"></div>
-        </div>
-        <!-- <img src="image/Location (1).png" alt="" class="pin pAus">
-        <img src="image/Location (2).png" alt="" class="pin pNew">
-        <img src="image/Location (3).png" alt="" class="pin pCha">
-        <img src="image/Location (4).png" alt="" class="pin pBra">
-        <img src="image/Location (5).png" alt="" class="pin pFra">
-        <img src="image/Location (6).png" alt="" class="pin pInd"> -->
-        <table class="tb">
-          <tr>
-            <td class="Australia c">
-              <img src="image/Layer 777.png" alt="">
-              Australia
-            </td>
-            <td class="u">
-              25042 User
-            </td>
-            <td class="China c">
-              <img src="image/Layer 776.png" alt="">
-              China
-            </td>
-            <td class="u">
-              22048 User
-            </td>
-
-          </tr>
-          <tr>
-            <td class="India c">
-              <img src="image/Layer 780.png" alt="">
-              India
-            </td>
-            <td class="u">
-              75112 User
-            </td>
-            <td class="France c">
-              <img src="image/Layer 775.png" alt="">
-              France
-            </td>
-            <td class="u">
-              75956 User
-            </td>
-
-          </tr>
-          <tr>
-            <td class="Brazil c">
-              <img src="image/Layer 783.png" alt="">
-              Brazil
-            </td>
-            <td class="u">
-              25017 User
-            </td>
-            <td class="NewYork c">
-              <img src="image/Layer 774.png" alt="">
-              New York
-            </td>
-            <td class="u">
-              75487 User
-            </td>
-
-          </tr>
-        </table>
-      </div>
-    </div>
-
-
-
-  </div>
-  <!--@@@@@@@@@@@@@@@@@@@@@@@@ ContentArea @@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-
-
-
   
+
+<!-- ---------------------------------Section-Bottom-------------------------------------------------------- -->
+
+
+
+<div class="content2">
+  <div class="card c1">
+    <h6 class="card-h">Activities</h6>
+    <a href="#" class="view">View All</a>
+    <div class="activity-grid">
+
+      <div class="point">
+      </div>
+      <div class="activity">
+        <h6>Caspian Bellevedere made an offer for $1,40,000</h6>
+        <p>12 Min ago, Bellevedere, New York</p>
+      </div>
+    </div>
+    <div class="activity-grid">
+
+      <div class="point">
+      </div>
+      <div class="activity">
+        <h6>Valentino Morose asking for the rented</h6>
+        <p>15 Min ago, Bellevedere, UAE</p>
+      </div>
+    </div>
+    <div class="activity-grid">
+
+      <div class="point">
+      </div>
+      <div class="activity">
+        <h6>Most Disclosure.PDF</h6>
+        <p>18 Min ago, Owosso, USA</p>
+      </div>
+    </div>
+    <div class="activity-grid">
+      <div class="point">
+      </div>
+      <div class="activity">
+        <h6>Piff Jenkins 02 New Party Availables</h6>
+        <p>21 Min ago, Bellevedere, New York</p>
+      </div>
+    </div>
+    <div class="activity-grid last">
+      <div class="point">
+      </div>
+      <div class="activity">
+        <h6>Valentino Morose asking for the rented</h6>
+        <p>15 Min ago, Bellevedere, UAE</p>
+      </div>
+    </div>
+  </div>
+  <div class="card c2">
+    <h6 class="card-h">Total Email Sender</h6>
+    <div id="chartDiv"></div>
+    <!-- <div class="inDonut">
+      <h6>28.8K</h6>
+      <p>Total Emails Senders</p>
+    </div> -->
+  </div>
+  <div class="card c3">
+    <h6 class="card-h">Global Sales Top Location</h6>
+    <!-- <img class="map" src="image/png-world-map-world-map-png-2638.png" alt="" srcset=""> -->
+    <div>
+     
+      <div id="map"></div>
+    </div>
+    <table class="tb">
+      <tr>
+        <td class="Australia c">
+          <img src="image/Layer 777.png" alt=""><span>Australia</span>
+         
+        </td>
+        <td class="u">
+          25042 User
+        </td>
+        <td class="China c">
+          <img src="image/Layer 776.png" alt="">
+          <span>
+
+            China
+          </span>
+        </td>
+        <td class="u">
+          22048 User
+        </td>
+
+      </tr>
+      <tr>
+        <td class="India c">
+          <img src="image/Layer 780.png" alt="">
+          <span>
+            India
+          </span>
+        </td>
+        <td class="u">
+          75112 User
+        </td>
+        <td class="France c">
+          <img src="image/Layer 775.png" alt="">
+         <span>
+
+           France
+         </span> 
+        </td>
+        <td class="u">
+          75956 User
+        </td>
+
+      </tr>
+      <tr>
+        <td class="Brazil c">
+          <img src="image/Layer 783.png" alt="">
+          <span>
+
+            Brazil
+          </span> 
+        </td>
+        <td class="u">
+          25017 User
+        </td>
+        <td class="NewYork c">
+          <img src="image/Layer 774.png" alt="">
+          <span>
+
+            New York
+          </span>
+        </td>
+        <td class="u">
+          75487 User
+        </td>
+
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------Section-Bottom-------------------------------------------------------- -->
+
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-  crossorigin="anonymous"></script>
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jscharting.com/latest/jscharting.js"></script>
   <script type="text/javascript" src="https://code.jscharting.com/latest/modules/types.js"></script>
   <script type="text/javascript" src="https://code.jscharting.com/latest/modules/toolbar.js"></script>
-  <script src="dash.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
 
+  <script src="dash.js"></script>
   <script src="mapdata.js"></script>
   <script src="worldmap.js"></script>
-
 </body>
-
-</html>

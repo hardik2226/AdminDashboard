@@ -9,10 +9,10 @@ var simplemaps_worldmap_mapdata = {
     //State defaults
     state_description: "State description",
     state_color: "#e4e4e4",
-    state_hover_color: "#3B729F",
+    state_hover_color: "#3B7210",
     state_url: "#",
     border_size: 1.5,
-    border_color: "#ffffff",
+    border_color: "#e4e4e4",
     all_states_inactive: "no",
     all_states_zoomable: "no",
 
@@ -22,10 +22,10 @@ var simplemaps_worldmap_mapdata = {
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
-    location_size: 25,
-    location_type: "square",
+    location_size: 35,
+    location_type: "image",
     location_border_color: "#FFFFFF",
-    location_border: 2,
+    location_border: 0,
     location_hover_border: 2.5,
     all_locations_inactive: "no",
     all_locations_hidden: "no",
@@ -34,8 +34,8 @@ var simplemaps_worldmap_mapdata = {
     label_color: "#ffffff",
     label_hover_color: "#ffffff",
     label_size: 22,
-    label_font: "Arial",
-    hide_labels: "no",
+    label_font: "poppins",
+    hide_labels: "yes",
 
     //Zoom settings
     manual_zoom: "no",
@@ -58,10 +58,10 @@ var simplemaps_worldmap_mapdata = {
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
-    popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
+    popup_font: "12px/1.5 Poppins, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
 
-    //Advanced settings
+    // Advanced settings
     // div: "map",
     // auto_load: "yes",
     // rotate: "0",
@@ -1574,12 +1574,13 @@ var simplemaps_worldmap_mapdata = {
   locations: {
     "0": {
       name: "India",
-      lat: "28.7041",
-      lng: "77.1025",
+      lat: "24.7041",
+      lng: "78.1025",
       description: "75112 Users",
       color: '#6582ff',
       hover_color: '#6582ff',
       url: "default",
+      image_url: "image/Location (6).png"
 
     },
 
@@ -1590,27 +1591,30 @@ var simplemaps_worldmap_mapdata = {
       description: "25042 Users",
       color: '#f818fb',
       hover_color: '#f818fb',
-      url: "default"
+      url: "default",
+      image_url: "image/Location (4).png"
 
     },
     "2": {
       name: "France",
-      lat: "46.2276",
-      lng: "2.2137",
+      lat: "40.5",
+      lng: "-3.2137",
       description: "75956 Users",
       color: '#f7891e',
       hover_color: '#f7891e',
-      url: "default"
+      url: "default",
+      image_url: "image/Location (5).png"
 
     },
     "3": {
       name: "New York",
-      lat: "40.71",
-      lng: "-74.0059731",
+      lat: "40",
+      lng: "-82.00",
       description: "75487 Users",
       color: '#3d1ef7',
       hover_color: '#3d1ef7',
       url: "default",
+      image_url: "image/Location (2).png"
 
     },
     "4": {
@@ -1620,17 +1624,19 @@ var simplemaps_worldmap_mapdata = {
       description: "25042 Users",
       color: "#fb1855",
       hover_color: '#fb1855',
-      url: "default"
+      url: "default",
+      image_url: "image/Location (1).png"
 
     },
     "5": {
       name: "China",
-      lat: "35.8617",
-      lng: "103",
+      lat: "40.8617",
+      lng: "112",
       description: "22048 Users",
       color: '#6ad06c',
       hover_color: '#6ad06c',
-      url: "default"
+      url: "default",
+      image_url: "image/Location (3).png"
 
     }
   },
